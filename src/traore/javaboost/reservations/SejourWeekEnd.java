@@ -4,10 +4,15 @@ import traore.javaboost.logements.Logement;
 
 import java.util.Date;
 
-public class SejourCourt extends Sejour{
+public class SejourWeekEnd extends Sejour{
 
-    public SejourCourt(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
+    public SejourWeekEnd(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
         super(pDateArrivee, pNbNuits, pLogement, pNbVoyageurs);
+    }
+
+    @Override
+    public void afficher() {
+
     }
 
     /**
@@ -17,14 +22,7 @@ public class SejourCourt extends Sejour{
      */
     @Override
     public boolean aUnNombreDeNuitsCorrect() {
-        return this.nbNuits >= 1 && this.nbNuits <= 5;
-    }
-
-    @Override
-    public void afficher() {
-        super.afficherSejour();
-
-        System.out.println("Le prix de ce séjour court est de "+this.prix+"€.");
+        return this.nbNuits == 2;
     }
 
     @Override

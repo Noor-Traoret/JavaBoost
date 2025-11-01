@@ -9,28 +9,35 @@ import java.util.Date;
 import static java.time.LocalTime.now;
 
 public abstract class Sejour implements IReservable {
-    protected Date dateArrivee;
+    private Date dateArrivee;
     protected int nbNuits;
-    protected Logement logement;
+    private Logement logement;
     private int nbVoyageurs;
+    protected int prix;
 
     public Sejour(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
         this.dateArrivee = pDateArrivee;
         this.nbNuits = pNbNuits;
         this.logement = pLogement;
         this.nbVoyageurs = pNbVoyageurs;
+        this.prix = pLogement.getTarifParNuit()*pNbNuits;
     }
-    @Override
-    public abstract void afficher();/*{
+
+    protected void afficherSejour(){
         logement.afficher();
         System.out.println(
                 "La date d’arrivée est le "+this.dateArrivee+" pour "+this.nbNuits
-                        +" nuit"+(nbNuits > 1 ?"s.":".")+"\nLe prix de ce séjour est de "+this.logement.getTarifParNuit()*this.nbNuits+"€.");
-        if (logement instanceof Maison){
+                        +" nuit"+(nbNuits > 1 ?"s.":"."));
+        /*if (logement instanceof Maison){
             Maison maMaison = (Maison)logement;
             System.out.println("Piscine d'intérieur : "+(maMaison.aUnePiscineInterieur() ? "Oui": "Non"));
-        }
-    }*/
+        }*/
+    }
+
+    @Override
+    public abstract void afficher();
+
+    public abstract void miseAJourDuPrixDuSejour();
 
     /**
      * aUneDateArriveeCorrecte : retourne vrai si la date d’arrivée est plus grande
@@ -39,16 +46,6 @@ public abstract class Sejour implements IReservable {
      */
     @Override
     public boolean aUneDateArriveeCorrecte() {return this.dateArrivee.after(new Date());}
-
-    /**
-     * aUnNombreDeNuitsCorrecte : retourne vrai si le nombre de jours du séjour est compris
-     * entre 1 et 31 (un jour minimum, un mois maximum), faux sinon.
-     * @return
-     */
-    @Override
-    public boolean aUnNombreDeNuitsCorrect() {
-        return this.nbNuits >= 1 && this.nbNuits <= 31;
-    }
 
     /**
      * aUnNombreDeVoyageursCorrect : retourne vrai si le nombre de personnes du séjour
