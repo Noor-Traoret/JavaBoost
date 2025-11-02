@@ -22,13 +22,13 @@ public class SejourCourt extends Sejour{
 
     @Override
     public void afficher() {
-        super.afficherSejour();
+        afficherSejour();
 
         System.out.println("Le prix de ce séjour court est de "+this.prix+"€.");
     }
 
     @Override
     public void miseAJourDuPrixDuSejour() {
-
+        this.prix = logement.getTarifParNuit()*nbNuits;
     }
 }

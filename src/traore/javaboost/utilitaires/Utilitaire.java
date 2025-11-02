@@ -1,7 +1,12 @@
 package traore.javaboost.utilitaires;
 
+import java.lang.annotation.AnnotationTypeMismatchException;
 import java.util.Date;
+import java.util.InputMismatchException;
 import java.util.Objects;
+import java.util.Scanner;
+
+import static java.lang.Integer.parseInt;
 
 public class Utilitaire {
     /**
@@ -38,5 +43,39 @@ public class Utilitaire {
         stringBuilder.append(date.getYear()+1900);
         //return (date.getDate() < 10?"0":"")+date.getDate()+"/"+(date.getMonth() < 9?"0":"")+(date.getMonth()+1)+"/"+(date.getYear()+1900);
         return stringBuilder;
+    }
+
+    /**
+     *
+     * @param nomDeLaVariable correspondant au nom de la variable à initialiser (ça sera utile pour l’affichage)
+     * @param valeurMin correspondant à la valeur du choix minimum possible.
+     * @param valeurMax correspondant à la valeur du choix maximum possible.
+     * @return retourne un entier si celui-ci est compris entre valeurMin et valeurMax
+     * @throws Exception Si la valeur saisir n'est pas un entier
+     */
+    public static int choix(String nomDeLaVariable, int valeurMin, int valeurMax){
+        Scanner scr = new Scanner(System.in);
+
+        int valeurSaisie = 0 ;
+
+        boolean choixCorrect = false;
+
+        do{
+            System.out.print("Saisir une valeur pour le nombre de nuits entre "+valeurMin+" et "+valeurMax+" : ");
+            try {
+                valeurSaisie = scr.nextInt();
+
+                if(valeurSaisie < valeurMin || valeurSaisie > valeurMax){
+                    System.out.println("Attention la valeur n’est pas entre "+valeurMin+" et "+valeurMax+" : ");
+                }else{
+                    choixCorrect = true;
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Attention la valeur oups... n’est pas un entier. ");
+            }
+        } while (!choixCorrect);
+
+        System.out.println("Ok on part pour "+valeurSaisie+" nuits !!");
+        return valeurSaisie;
     }
 }

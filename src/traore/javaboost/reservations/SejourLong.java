@@ -12,9 +12,6 @@ public class SejourLong extends Sejour{
 
     public SejourLong(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
         super(pDateArrivee, pNbNuits, pLogement, pNbVoyageurs);
-        this.promotion = ((pLogement.getTarifParNuit()*pNbNuits)*PROMOTION_EN_POURCENTAGE)/100;
-        this.prix -= promotion;
-
     }
 
     @Override
@@ -24,13 +21,15 @@ public class SejourLong extends Sejour{
 
     @Override
     public void afficher() {
-        super.afficherSejour();
+        afficherSejour();
 
         System.out.println("Le prix de ce séjour long est de "+prix+"€ (avec une promotion de "+promotion+"€)");
     }
 
     @Override
     public void miseAJourDuPrixDuSejour() {
-
+        int prixInitial =  logement.getTarifParNuit()*nbNuits;
+        this.promotion = ((logement.getTarifParNuit()*nbNuits)*PROMOTION_EN_POURCENTAGE)/100;
+        this.prix = prixInitial - promotion;
     }
 }
