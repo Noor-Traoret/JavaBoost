@@ -60,12 +60,12 @@ public abstract class Sejour implements IReservable {
      */
     @Override
     public boolean aUneDateArriveeCorrecte() {
-        if(this instanceof SejourWeekEnd ){
+        /*if(this instanceof SejourWeekEnd ){
 
             //return this.dateArrivee.after(new Date()) && this.dateArrivee.getDay() == 5;
             LocalDate arrival = this.dateArrivee.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
             return arrival.isAfter(LocalDate.now()) && arrival.getDayOfWeek() == DayOfWeek.FRIDAY;
-        }
+        }*/
         return this.dateArrivee.after(new Date());
     }
 

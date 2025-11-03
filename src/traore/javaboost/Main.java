@@ -27,19 +27,37 @@ public class Main {
 
         MaDate dateSejour = new MaDate(14,11,2025);
 
-        int nbNuit = Utilitaire.choix("nbNuits", 6, 31);
+        Reservation maReservation;
 
+        Sejour monSejour;
 
-        SejourCourt monSejourCourt = new SejourCourt(dateSejour,4, maMaison1, 2);
-        SejourLong monSejourLong = new SejourLong(dateSejour,8, monAppartement1, 2);
-        SejourWeekEnd monSejourWeekEnd = new SejourWeekEnd(dateSejour,2, monChalet, 2);
+        int nbVoyageur = Utilitaire.choix("le nombre de voyageurs", 1, 5);
 
-        Reservation maReservation1 = new Reservation(voyageur, monSejourCourt);
-        Reservation maReservation2 = new Reservation(voyageur, monSejourLong);
-        Reservation maReservation3 = new Reservation(voyageur, monSejourWeekEnd);
+        int nbNuit = Utilitaire.choix("le nombre de nuits", 1, 31);
 
-        //maReservation2.afficher();
+        if(nbNuit == 2 && Utilitaire.verifDayOfWeek(dateSejour)){ //dateSejour.getDay()==5 => eqivalent de la méthode verifDayOfWeek()
+
+            monSejour = new SejourWeekEnd(dateSejour,nbNuit, monChalet, nbVoyageur);
+
+        } else if (nbNuit < 6) {
+
+            monSejour = new SejourCourt(dateSejour,nbNuit, maMaison1, nbVoyageur);
+
+        }else {
+
+            monSejour = new SejourLong(dateSejour,nbNuit, monAppartement1, nbVoyageur);
+        }
+
+        try{
+            maReservation = new Reservation(voyageur, monSejour);
+            maReservation.afficher();
+        }catch(Exception e){
+            System.out.println("Impossible de créer la reservation car : "+e.getMessage());
+        }
 
     }
+
+
+
 
 }
