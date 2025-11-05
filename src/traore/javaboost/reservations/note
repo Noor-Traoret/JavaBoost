@@ -1,0 +1,75 @@
+
+TP 21 - Le patron de conception : Factory
+Définition :
+
+Une Factory (fabrique en français) permet de créer un objet dont le
+type dépend du contexte : cet objet fait partie d'un ensemble de sous-
+classes. L'objet retourné par la Factory est donc toujours du type de la
+classe mère mais grâce au polymorphisme les traitements exécutés
+sont ceux de l'instance créée.
+
+
+La problème, c'est que je dois créer une fille à la classe Sejour selon
+des conditions. On a alors écrit le test permettant de créer tel ou tel
+objet fille. Mais ce test n'est obligatoire et devrait être répéter sans
+erreur à chaque fois que l'on souhaite créer une nouvelle instance fille
+de Sejour.
+
+
+Nous allons utiliser ce Design Pattern pour la création d’un séjour
+nous permettant de corriger ce problème. On va alors écrire ce test
+à un seul endroit dans une fonctionnalité et on faire en sorte d'être
+obligé de passer par l'appel à cette méthode pour créer un objet fille
+de type Sejour.
+
+
+Nous nous sommes arrêtés au code suivant dans la méthode main :
+
+Sejour monSejour;
+
+if (nbNuits == 2 && maDate.getDay() == 5) {
+    // Sejour weekend
+    monSejour = new SejourWeekEnd(maDate, nbNuits, logement, nbVoyageurs);
+} else if (nbNuits < 6) {
+    // Sejour court
+    monSejour = new SejourCourt(maDate, nbNuits, logement, nbVoyageurs);
+} else {
+    // Sejour long
+    monSejour = new SejourLong(maDate, nbNuits, logement, nbVoyageurs);
+}
+
+
+1° - Créer une nouvelle classe SejourFactory dans le package reservations qui
+    va faire ce travail.
+
+
+2° - Dans cette classe créez une méthode déclarée public static qui s’appelle
+    creerSejour.
+
+    Cette méthode prend en paramètre :
+
+    Date dateArrivee
+
+    Logement logement
+
+    int nbNuits
+
+    int nbVoyageurs
+
+    Elle retournera un objet de type Sejour, mais en réalité vous allez retourner une fille
+    à la classe Sejour fabriquée selon les critères passés en paramètre à la méthode.
+
+3° - Ajoutez le marqueur de classe final afin que cette classe ne puisse pas être héritée.
+
+4° - Ajoutez un constructeur par défaut de manière explicite et changez la visibilité en private.
+
+    On ne pourra pas créer un instance de cette classe factory, car ce n’est pas le but.
+
+5° - Utilisez votre méthode de votre classe SejourFactory dans le main :
+
+    Sejour sejour = SejourFactory.creerSejour(dateArrivee, nbNuits, logement, nbVoyageurs);
+
+
+6° - L’intérêt de faire cette classe dans le même package que les classes SejourtCourt, SejourLong et
+     SejourWeekEnd, c’est que l’on va maintenant changer la visibilité des constructeurs de ces classes
+     en package. Seule une classe du même package (ici la fabrique) ne pourra créer d’instances de classes filles.

@@ -27,15 +27,13 @@ public class Main {
 
         MaDate dateSejour = new MaDate(14,11,2025);
 
-        Reservation maReservation;
-
-        Sejour monSejour;
-
         int nbVoyageur = Utilitaire.choix("le nombre de voyageurs", 1, 5);
 
         int nbNuit = Utilitaire.choix("le nombre de nuits", 1, 31);
 
-        if(nbNuit == 2 && Utilitaire.verifDayOfWeek(dateSejour)){ //dateSejour.getDay()==5 => eqivalent de la méthode verifDayOfWeek()
+        Sejour monSejour = SejourFactory.creerSejour(dateSejour, monAppartement1, nbNuit, nbVoyageur);
+
+        /*if(nbNuit == 2 && Utilitaire.verifDayOfWeek(dateSejour)){ //dateSejour.getDay()==5 => eqivalent de la méthode verifDayOfWeek()
 
             monSejour = new SejourWeekEnd(dateSejour,nbNuit, monChalet, nbVoyageur);
 
@@ -46,8 +44,9 @@ public class Main {
         }else {
 
             monSejour = new SejourLong(dateSejour,nbNuit, monAppartement1, nbVoyageur);
-        }
+        }*/
 
+        Reservation maReservation;
         try{
             maReservation = new Reservation(voyageur, monSejour);
             maReservation.afficher();

@@ -8,7 +8,9 @@ public class SejourWeekEnd extends Sejour{
 
     public static final int PROMOTION = 50;
 
-    public SejourWeekEnd(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
+    //La visibilité du constructeur est passée à package, afin que seule une classe du même
+    // package (ici la fabrique) ne pourra créer d’instances de classes filles.
+     SejourWeekEnd(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
         super(pDateArrivee, pNbNuits, pLogement, pNbVoyageurs);
     }
 

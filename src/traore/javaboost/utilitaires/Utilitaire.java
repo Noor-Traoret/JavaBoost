@@ -78,7 +78,7 @@ public class Utilitaire {
         boolean choixCorrect = false;
 
         do{
-            System.out.print("Saisir une valeur pour le nombre de nuits entre "+valeurMin+" et "+valeurMax+" : ");
+            System.out.print("Saisir une valeur pour "+nomDeLaVariable+" entre "+valeurMin+" et "+valeurMax+" : ");
 
             try {
                 valeurSaisie = scr.nextInt();
@@ -87,7 +87,7 @@ public class Utilitaire {
                     System.out.println("Attention la valeur n’est pas entre "+valeurMin+" et "+valeurMax+" : ");
                 }else{
                     choixCorrect = true;
-                    scr.close();
+
                 }
             } catch (InputMismatchException e) {
                 System.out.println("Attention la valeur oups... n’est pas un entier. ");
