@@ -15,7 +15,7 @@ public abstract class Sejour implements IReservable {
     private int nbVoyageurs;
     protected int prix;
 
-    public Sejour(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
+    Sejour(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
         this.dateArrivee = pDateArrivee;
         this.nbNuits = pNbNuits;
         this.logement = pLogement;

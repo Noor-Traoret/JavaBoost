@@ -10,7 +10,7 @@ public class SejourLong extends Sejour{
 
     public static final int PROMOTION_EN_POURCENTAGE = 20;
 
-    public SejourLong(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
+    SejourLong(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
         super(pDateArrivee, pNbNuits, pLogement, pNbVoyageurs);
     }
 

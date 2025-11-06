@@ -1,5 +1,6 @@
 package traore.javaboost;
 
+import traore.javaboost.data.JavaBoostData;
 import traore.javaboost.logements.Appartement;
 import traore.javaboost.logements.Chalet;
 import traore.javaboost.logements.Logement;
@@ -11,19 +12,19 @@ import traore.javaboost.utilisateurs.Voyageur;
 import traore.javaboost.utilitaires.MaDate;
 import traore.javaboost.utilitaires.Utilitaire;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String [] args){
 
-        Hote hote = new Hote("Traore","Noor", 35, 1);
+        JavaBoostData data = JavaBoostData.getInstance();
+
+        Hote hote = data.getHotes().get(0);
+        Logement logement = data.getLogements().get(0);
 
         Voyageur voyageur = new Voyageur("Traore","Fatoumata Zahra", 26);
-
-        Maison maMaison1 = new Maison("Résidence Fatima", 500, "157 Boulevard de la Liberté, Lille", 200, 5, hote, 50, false);
-        Appartement monAppartement1 = new Appartement("Alpha", 15, "157 Boulevard de la Liberté, Lille", 50, 2, hote, 3, 1);
-        Chalet monChalet = new Chalet("La madrague", 40, "Bassam", 5, 2, hote, 10);
 
         MaDate dateSejour = new MaDate(14,11,2025);
 
@@ -31,8 +32,9 @@ public class Main {
 
         int nbNuit = Utilitaire.choix("le nombre de nuits", 1, 31);
 
-        Sejour monSejour = SejourFactory.creerSejour(dateSejour, monAppartement1, nbNuit, nbVoyageur);
+        Sejour monSejour = SejourFactory.creerSejour(dateSejour, logement, nbNuit, nbVoyageur);
 
+        //Le code ci-dessous est géré dans l classe SejourFactory
         /*if(nbNuit == 2 && Utilitaire.verifDayOfWeek(dateSejour)){ //dateSejour.getDay()==5 => eqivalent de la méthode verifDayOfWeek()
 
             monSejour = new SejourWeekEnd(dateSejour,nbNuit, monChalet, nbVoyageur);
