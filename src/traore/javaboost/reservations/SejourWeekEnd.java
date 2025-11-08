@@ -1,6 +1,7 @@
 package traore.javaboost.reservations;
 
 import traore.javaboost.logements.Logement;
+import traore.javaboost.utilitaires.MaDate;
 
 import java.util.Date;
 
@@ -10,7 +11,7 @@ public class SejourWeekEnd extends Sejour{
 
     //La visibilité du constructeur est passée à package, afin que seule une classe du même
     // package (ici la fabrique) ne pourra créer d’instances de classes filles.
-     SejourWeekEnd(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
+     SejourWeekEnd(MaDate pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
         super(pDateArrivee, pNbNuits, pLogement, pNbVoyageurs);
     }
 
@@ -45,3 +46,4 @@ public class SejourWeekEnd extends Sejour{
         this.prix = prixInitial - PROMOTION;
     }
 }
+

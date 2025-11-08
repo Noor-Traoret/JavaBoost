@@ -1,12 +1,13 @@
 package traore.javaboost.reservations;
 
 import traore.javaboost.logements.Logement;
+import traore.javaboost.utilitaires.MaDate;
 
 import java.util.Date;
 
 public class SejourCourt extends Sejour{
 
-    SejourCourt(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
+    SejourCourt(MaDate pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
         super(pDateArrivee, pNbNuits, pLogement, pNbVoyageurs);
     }
 
@@ -32,3 +33,4 @@ public class SejourCourt extends Sejour{
         this.prix = logement.getTarifParNuit()*nbNuits;
     }
 }
+

@@ -1,6 +1,7 @@
 package traore.javaboost.reservations;
 
 import traore.javaboost.logements.Logement;
+import traore.javaboost.utilitaires.MaDate;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -9,13 +10,13 @@ import java.util.Date;
 
 
 public abstract class Sejour implements IReservable {
-    protected Date dateArrivee;
+    protected MaDate dateArrivee;
     protected int nbNuits;
     protected Logement logement;
     private int nbVoyageurs;
     protected int prix;
 
-    Sejour(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
+    Sejour(MaDate pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
         this.dateArrivee = pDateArrivee;
         this.nbNuits = pNbNuits;
         this.logement = pLogement;

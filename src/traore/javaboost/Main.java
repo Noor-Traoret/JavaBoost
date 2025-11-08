@@ -9,6 +9,7 @@ import traore.javaboost.reservations.*;
 import traore.javaboost.utilisateurs.Hote;
 import traore.javaboost.utilisateurs.Personne;
 import traore.javaboost.utilisateurs.Voyageur;
+import traore.javaboost.utilitaires.LogementsXMLParser;
 import traore.javaboost.utilitaires.MaDate;
 import traore.javaboost.utilitaires.Utilitaire;
 
@@ -47,6 +48,7 @@ public class Main {
 
             monSejour = new SejourLong(dateSejour,nbNuit, monAppartement1, nbVoyageur);
         }*/
+
 
         Reservation maReservation;
         try{

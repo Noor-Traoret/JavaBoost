@@ -1,6 +1,7 @@
 package traore.javaboost.reservations;
 
 import traore.javaboost.logements.Logement;
+import traore.javaboost.utilitaires.MaDate;
 
 import java.util.Date;
 
@@ -9,7 +10,7 @@ public final class SejourFactory {
     private SejourFactory() {
     }
 
-    public static Sejour creerSejour(Date dateArrivee, Logement logement, int nbNuits, int nbVoyageurs){
+    public static Sejour creerSejour(MaDate dateArrivee, Logement logement, int nbNuits, int nbVoyageurs){
 
         Sejour monSejour;
 

@@ -1,6 +1,7 @@
 package traore.javaboost.reservations;
 
 import traore.javaboost.logements.Logement;
+import traore.javaboost.utilitaires.MaDate;
 
 import java.util.Date;
 
@@ -10,7 +11,7 @@ public class SejourLong extends Sejour{
 
     public static final int PROMOTION_EN_POURCENTAGE = 20;
 
-    SejourLong(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
+    SejourLong(MaDate pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
         super(pDateArrivee, pNbNuits, pLogement, pNbVoyageurs);
     }
 
@@ -33,3 +34,4 @@ public class SejourLong extends Sejour{
         this.prix = prixInitial - promotion;
     }
 }
+
