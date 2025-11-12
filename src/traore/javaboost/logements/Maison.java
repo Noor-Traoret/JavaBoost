@@ -5,8 +5,8 @@ import traore.javaboost.utilisateurs.Hote;
 import java.util.Objects;
 
 public class Maison extends Logement {
-    private int superficieDuJardin;
-    private boolean possedePiscine;
+    private final int superficieDuJardin;
+    private final boolean possedePiscine;
 
     public Maison(String pNom, int pTarifParNuit, String pAdresse, int pSuperficie, int pNbVoyageursMax, Hote pHote, int pSuperficieDuJardin, boolean pPossedePiscine) {
         super(pNom, pTarifParNuit, pAdresse, pSuperficie, pNbVoyageursMax, pHote);

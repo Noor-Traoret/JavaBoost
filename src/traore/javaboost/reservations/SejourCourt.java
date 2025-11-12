@@ -14,7 +14,7 @@ public class SejourCourt extends Sejour{
     /**
      * aUnNombreDeNuitsCorrecte : retourne vrai si le nombre de jours du séjour est compris
      * entre 1 et 31 (un jour minimum, un mois maximum), faux sinon.
-     * @return
+     *
      */
     @Override
     public boolean aUnNombreDeNuitsCorrect() {

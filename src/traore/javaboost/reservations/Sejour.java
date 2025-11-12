@@ -10,18 +10,35 @@ import java.util.Date;
 
 
 public abstract class Sejour implements IReservable {
-    protected MaDate dateArrivee;
+    protected Date dateArrivee;
     protected int nbNuits;
     protected Logement logement;
     private int nbVoyageurs;
     protected int prix;
 
-    Sejour(MaDate pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
-        this.dateArrivee = pDateArrivee;
+    Sejour(Date pDateArrivee, int pNbNuits, Logement pLogement, int pNbVoyageurs) {
+        // Copie defensive de la date, pour evider de modifier l'état de l'objet après son initialisation.
+        // Elle est egalement possible avec le clonage de la pDateArrivee, cependant s'assurer que la classe
+        // fille a redefinir la methode (clone() appartenet à la classe object).
+        this.dateArrivee = new MaDate(pDateArrivee.getTime());
+        //this.dateArrivee = (Date)pDateArrivee.clone();
         this.nbNuits = pNbNuits;
         this.logement = pLogement;
         this.nbVoyageurs = pNbVoyageurs;
         this.miseAJourDuPrixDuSejour();
+    }
+
+    /**
+     *
+     * @param pLogement le nouveau logement
+     * @throws IllegalArgumentException si le logement passé en paramètre est null.
+     */
+    public void setLogement(Logement pLogement) {
+        if(logement == null){
+            throw new IllegalArgumentException("Logement null");
+        }
+        this.logement = pLogement;
+        miseAJourDuPrixDuSejour();
     }
 
     protected void afficherSejour(){

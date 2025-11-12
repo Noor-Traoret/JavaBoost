@@ -9,12 +9,12 @@ import traore.javaboost.utilisateurs.Personne;
  * @version 1.0.0
  */
 public abstract class Logement {
-    private String nom;
-    private int tarifParNuit;
-    private String adresse;
-    protected int superficie;
-    private int nbVoyageursMax;
-    private Hote hote;
+    private final String nom;
+    private final int tarifParNuit;
+    private final String adresse;
+    protected final int superficie;
+    private final int nbVoyageursMax;
+    private final Hote hote;
 
     /**
      * Constructeur de logement avec cinq paramètres.
@@ -22,7 +22,7 @@ public abstract class Logement {
      * @param pTarifParNuit montant de la nuitée
      * @param pAdresse la localisation
      * @param pSuperficie la superficie du logement
-     * @param pNbVoyageursMax nombre de personne maximal pour la chambre.
+     * @param pNbVoyageursMax nombre de personnes maximal pour la chambre.
      */
     public Logement(String pNom, int pTarifParNuit, String pAdresse, int pSuperficie, int pNbVoyageursMax, Hote pHote){
         this.nom = pNom;
@@ -37,41 +37,41 @@ public abstract class Logement {
         return nom;
     }
 
-    public void setNom(String nom) {
+   /*public void setNom(String nom) {
         this.nom = nom;
-    }
+    }*/
 
     public int getTarifParNuit() {
         return tarifParNuit;
     }
 
-    public void setTarifParNuit(int tarifParNuit) {
+    /*public void setTarifParNuit(int tarifParNuit) {
         this.tarifParNuit = tarifParNuit;
-    }
+    }*/
 
     public String getAdresse() {
         return adresse;
     }
 
-    public void setAdresse(String adresse) {
+    /*public void setAdresse(String adresse) {
         this.adresse = adresse;
-    }
+    }*/
 
     public int getSuperficie() {
         return superficie;
     }
 
-    public void setSuperficie(int superficie) {
+    /*public void setSuperficie(int superficie) {
         this.superficie = superficie;
-    }
+    }*/
 
     public int getNbVoyageursMax() {
         return nbVoyageursMax;
     }
 
-    public void setNbVoyageursMax(int nbVoyageursMax) {
+    /*public void setNbVoyageursMax(int nbVoyageursMax) {
         this.nbVoyageursMax = nbVoyageursMax;
-    }
+    }*/
 
     public Personne getHote() {
         return hote;

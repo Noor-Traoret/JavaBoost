@@ -1,7 +1,7 @@
 package traore.javaboost.utilisateurs;
 
 public class Hote extends Personne{
-    int delaiDeReponse;
+    private final int delaiDeReponse;
     public Hote(String pNom, String pPrenoms, int pAge, int pDelaiDeReponse){
             super(pNom, pPrenoms, pAge);
             this.delaiDeReponse = pDelaiDeReponse;

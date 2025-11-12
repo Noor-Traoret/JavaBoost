@@ -9,6 +9,11 @@ public class MaDate extends Date {
         super();
     }
 
+    public MaDate( long timestamp) {
+
+        super(timestamp);
+    }
+
     public MaDate(int day, int month, int year) {
         super(year-1900, month-1, day);
     }

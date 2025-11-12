@@ -1,0 +1,702 @@
+<Logements>
+    <Appartement name="Appartement 1">
+        <hote>
+            <nom>Golade</nom>
+            <prenom>Larry</prenom>
+            <age>32</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>200</tarifParNuit>
+        <adresse>113 Rue de la République,Lyon</adresse>
+        <superficie>193</superficie>
+        <nbVoyageursMax>10</nbVoyageursMax>
+        <numeroEtage>4</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 2">
+        <hote>
+            <nom>Ouzi</nom>
+            <prenom>Jacques</prenom>
+            <age>52</age>
+            <delaiReponse>1</delaiReponse>
+        </hote>
+        <tarifParNuit>200</tarifParNuit>
+        <adresse>94 Rue Kervégan, Nantes</adresse>
+        <superficie>79</superficie>
+        <nbVoyageursMax>7</nbVoyageursMax>
+        <numeroEtage>0</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 3">
+        <hote>
+            <nom>Golade</nom>
+            <prenom>Larry</prenom>
+            <age>32</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>200</tarifParNuit>
+        <adresse>9 Rue Kervégan, Nantes</adresse>
+        <superficie>189</superficie>
+        <nbVoyageursMax>5</nbVoyageursMax>
+        <numeroEtage>2</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 4">
+        <hote>
+            <nom>Mensoif</nom>
+            <prenom>Gerard</prenom>
+            <age>34</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>100</tarifParNuit>
+        <adresse>157 Boulevard de la Liberté, Lille</adresse>
+        <superficie>235</superficie>
+        <nbVoyageursMax>7</nbVoyageursMax>
+        <numeroEtage>0</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 5">
+        <hote>
+            <nom>Menfaim</nom>
+            <prenom>Gérard</prenom>
+            <age>42</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>80</tarifParNuit>
+        <adresse>181 Rue Victor Hugo, Lyon</adresse>
+        <superficie>106</superficie>
+        <nbVoyageursMax>10</nbVoyageursMax>
+        <numeroEtage>0</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 6">
+        <hote>
+            <nom>Cover</nom>
+            <prenom>Harry</prenom>
+            <age>32</age>
+            <delaiReponse>1</delaiReponse>
+        </hote>
+        <tarifParNuit>150</tarifParNuit>
+        <adresse>119 Avenue du Prado, Marseille</adresse>
+        <superficie>220</superficie>
+        <nbVoyageursMax>9</nbVoyageursMax>
+        <numeroEtage>1</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 7">
+        <hote>
+            <nom>Menfaim</nom>
+            <prenom>Gérard</prenom>
+            <age>42</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>200</tarifParNuit>
+        <adresse>190 Rue des Grandes Arcades, Strasbourg</adresse>
+        <superficie>220</superficie>
+        <nbVoyageursMax>5</nbVoyageursMax>
+        <numeroEtage>1</numeroEtage>
+        <superficieBalcon>15</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 8">
+        <hote>
+            <nom>Mensoif</nom>
+            <prenom>Gerard</prenom>
+            <age>34</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>40</tarifParNuit>
+        <adresse>193 Rue Kervégan, Nantes</adresse>
+        <superficie>236</superficie>
+        <nbVoyageursMax>2</nbVoyageursMax>
+        <numeroEtage>1</numeroEtage>
+        <superficieBalcon>15</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 9">
+        <hote>
+            <nom>Assin</nom>
+            <prenom>Marc</prenom>
+            <age>24</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>150</tarifParNuit>
+        <adresse>39 Rue Saint - Ferréol, Marseille</adresse>
+        <superficie>92</superficie>
+        <nbVoyageursMax>2</nbVoyageursMax>
+        <numeroEtage>2</numeroEtage>
+        <superficieBalcon>5</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 10">
+        <hote>
+            <nom>Mensoif</nom>
+            <prenom>Gerard</prenom>
+            <age>34</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>200</tarifParNuit>
+        <adresse>30 Rue Gambetta, Lille</adresse>
+        <superficie>222</superficie>
+        <nbVoyageursMax>6</nbVoyageursMax>
+        <numeroEtage>1</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 11">
+        <hote>
+            <nom>Menfaim</nom>
+            <prenom>Gérard</prenom>
+            <age>42</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>40</tarifParNuit>
+        <adresse>36 Rue Foch, Montpellier</adresse>
+        <superficie>64</superficie>
+        <nbVoyageursMax>11</nbVoyageursMax>
+        <numeroEtage>3</numeroEtage>
+        <superficieBalcon>10</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 12">
+        <hote>
+            <nom>Ouzi</nom>
+            <prenom>Jacques</prenom>
+            <age>52</age>
+            <delaiReponse>1</delaiReponse>
+        </hote>
+        <tarifParNuit>50</tarifParNuit>
+        <adresse>196 Boulevard Lazare Carnot, Toulouse</adresse>
+        <superficie>188</superficie>
+        <nbVoyageursMax>6</nbVoyageursMax>
+        <numeroEtage>2</numeroEtage>
+        <superficieBalcon>15</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 13">
+        <hote>
+            <nom>Heat</nom>
+            <prenom>Hubert</prenom>
+            <age>54</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>150</tarifParNuit>
+        <adresse>9 Boulevard Lazare Carnot, Toulouse</adresse>
+        <superficie>87</superficie>
+        <nbVoyageursMax>4</nbVoyageursMax>
+        <numeroEtage>4</numeroEtage>
+        <superficieBalcon>15</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 14">
+        <hote>
+            <nom>Heat</nom>
+            <prenom>Hubert</prenom>
+            <age>54</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>40</tarifParNuit>
+        <adresse>111 Rue Gambetta, Lille</adresse>
+        <superficie>184</superficie>
+        <nbVoyageursMax>4</nbVoyageursMax>
+        <numeroEtage>0</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 15">
+        <hote>
+            <nom>Ochon</nom>
+            <prenom>Paul</prenom>
+            <age>32</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>200</tarifParNuit>
+        <adresse>26 Avenue des Champs - Élysées, Paris</adresse>
+        <superficie>73</superficie>
+        <nbVoyageursMax>6</nbVoyageursMax>
+        <numeroEtage>4</numeroEtage>
+        <superficieBalcon>10</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 16">
+        <hote>
+            <nom>Menfaim</nom>
+            <prenom>Gérard</prenom>
+            <age>42</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>40</tarifParNuit>
+        <adresse>70 Avenue du Prado, Marseille</adresse>
+        <superficie>116</superficie>
+        <nbVoyageursMax>7</nbVoyageursMax>
+        <numeroEtage>4</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 17">
+        <hote>
+            <nom>Mensoif</nom>
+            <prenom>Gerard</prenom>
+            <age>34</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>80</tarifParNuit>
+        <adresse>152 Boulevard Lazare Carnot, Toulouse</adresse>
+        <superficie>134</superficie>
+        <nbVoyageursMax>12</nbVoyageursMax>
+        <numeroEtage>1</numeroEtage>
+        <superficieBalcon>15</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 18">
+        <hote>
+            <nom>Proviste</nom>
+            <prenom>Alain</prenom>
+            <age>44</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>200</tarifParNuit>
+        <adresse>119 Rue Victor Hugo, Lyon</adresse>
+        <superficie>204</superficie>
+        <nbVoyageursMax>12</nbVoyageursMax>
+        <numeroEtage>0</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 19">
+        <hote>
+            <nom>Golade</nom>
+            <prenom>Larry</prenom>
+            <age>32</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>80</tarifParNuit>
+        <adresse>71 Rue Gambetta, Lille</adresse>
+        <superficie>96</superficie>
+        <nbVoyageursMax>8</nbVoyageursMax>
+        <numeroEtage>4</numeroEtage>
+        <superficieBalcon>5</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 20">
+        <hote>
+            <nom>Heat</nom>
+            <prenom>Hubert</prenom>
+            <age>54</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>50</tarifParNuit>
+        <adresse>171 Rue des Grandes Arcades, Strasbourg</adresse>
+        <superficie>135</superficie>
+        <nbVoyageursMax>2</nbVoyageursMax>
+        <numeroEtage>1</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 21">
+        <hote>
+            <nom>Cover</nom>
+            <prenom>Harry</prenom>
+            <age>32</age>
+            <delaiReponse>1</delaiReponse>
+        </hote>
+        <tarifParNuit>40</tarifParNuit>
+        <adresse>36 Rue Victor Hugo, Lyon</adresse>
+        <superficie>110</superficie>
+        <nbVoyageursMax>3</nbVoyageursMax>
+        <numeroEtage>1</numeroEtage>
+        <superficieBalcon>10</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 22">
+        <hote>
+            <nom>Cover</nom>
+            <prenom>Harry</prenom>
+            <age>32</age>
+            <delaiReponse>1</delaiReponse>
+        </hote>
+        <tarifParNuit>50</tarifParNuit>
+        <adresse>141 Avenue des Champs - Élysées, Paris</adresse>
+        <superficie>245</superficie>
+        <nbVoyageursMax>4</nbVoyageursMax>
+        <numeroEtage>0</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 23">
+        <hote>
+            <nom>Diossi</nom>
+            <prenom>Kelly</prenom>
+            <age>29</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>40</tarifParNuit>
+        <adresse>153 Rue du Taur, Toulouse</adresse>
+        <superficie>249</superficie>
+        <nbVoyageursMax>9</nbVoyageursMax>
+        <numeroEtage>4</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 24">
+        <hote>
+            <nom>Assin</nom>
+            <prenom>Marc</prenom>
+            <age>24</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>50</tarifParNuit>
+        <adresse>65 Rue Gambetta, Lille</adresse>
+        <superficie>52</superficie>
+        <nbVoyageursMax>4</nbVoyageursMax>
+        <numeroEtage>0</numeroEtage>
+        <superficieBalcon>0</superficieBalcon>
+    </Appartement>
+    <Appartement name="Appartement 25">
+        <hote>
+            <nom>Mensoif</nom>
+            <prenom>Gerard</prenom>
+            <age>34</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>200</tarifParNuit>
+        <adresse>142 Rue Sainte - Catherine, Bordeaux</adresse>
+        <superficie>121</superficie>
+        <nbVoyageursMax>4</nbVoyageursMax>
+        <numeroEtage>1</numeroEtage>
+        <superficieBalcon>5</superficieBalcon>
+    </Appartement>
+    <Maison name="Maison 1">
+        <hote>
+            <nom>Diossi</nom>
+            <prenom>Kelly</prenom>
+            <age>29</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>257</tarifParNuit>
+        <adresse>54 Avenue du Prado, Marseille</adresse>
+        <superficie>120</superficie>
+        <nbVoyageursMax>7</nbVoyageursMax>
+        <superficieJardin>1000</superficieJardin>
+        <possedePiscine>1</possedePiscine>
+    </Maison>
+    <Maison name="Maison 2">
+        <hote>
+            <nom>Diossi</nom>
+            <prenom>Kelly</prenom>
+            <age>29</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>188</tarifParNuit>
+        <adresse>82 Rue Victor Hugo, Lyon</adresse>
+        <superficie>198</superficie>
+        <nbVoyageursMax>5</nbVoyageursMax>
+        <superficieJardin>300</superficieJardin>
+        <possedePiscine>1</possedePiscine>
+    </Maison>
+    <Maison name="Maison 3">
+        <hote>
+            <nom>Menfaim</nom>
+            <prenom>Gérard</prenom>
+            <age>42</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>126</tarifParNuit>
+        <adresse>91 Boulevard Lazare Carnot, Toulouse</adresse>
+        <superficie>164</superficie>
+        <nbVoyageursMax>8</nbVoyageursMax>
+        <superficieJardin>0</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+    <Maison name="Maison 4">
+        <hote>
+            <nom>Ouzi</nom>
+            <prenom>Jacques</prenom>
+            <age>52</age>
+            <delaiReponse>1</delaiReponse>
+        </hote>
+        <tarifParNuit>296</tarifParNuit>
+        <adresse>23 Rue du Taur, Toulouse</adresse>
+        <superficie>155</superficie>
+        <nbVoyageursMax>7</nbVoyageursMax>
+        <superficieJardin>300</superficieJardin>
+        <possedePiscine>1</possedePiscine>
+    </Maison>
+    <Maison name="Maison 5">
+        <hote>
+            <nom>Lapêche</nom>
+            <prenom>Ella</prenom>
+            <age>43</age>
+            <delaiReponse>1</delaiReponse>
+        </hote>
+        <tarifParNuit>191</tarifParNuit>
+        <adresse>100 Boulevard de la Liberté, Lille</adresse>
+        <superficie>241</superficie>
+        <nbVoyageursMax>8</nbVoyageursMax>
+        <superficieJardin>100</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+    <Maison name="Maison 6">
+        <hote>
+            <nom>Diossi</nom>
+            <prenom>Kelly</prenom>
+            <age>29</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>264</tarifParNuit>
+        <adresse>56 Rue Kervégan, Nantes</adresse>
+        <superficie>150</superficie>
+        <nbVoyageursMax>5</nbVoyageursMax>
+        <superficieJardin>300</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+    <Maison name="Maison 7">
+        <hote>
+            <nom>Cover</nom>
+            <prenom>Harry</prenom>
+            <age>32</age>
+            <delaiReponse>1</delaiReponse>
+        </hote>
+        <tarifParNuit>91</tarifParNuit>
+        <adresse>47 Avenue du Prado, Marseille</adresse>
+        <superficie>164</superficie>
+        <nbVoyageursMax>7</nbVoyageursMax>
+        <superficieJardin>100</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+    <Maison name="Maison 8">
+        <hote>
+            <nom>Ouzi</nom>
+            <prenom>Jacques</prenom>
+            <age>52</age>
+            <delaiReponse>1</delaiReponse>
+        </hote>
+        <tarifParNuit>142</tarifParNuit>
+        <adresse>66 Rue des Grandes Arcades, Strasbourg</adresse>
+        <superficie>116</superficie>
+        <nbVoyageursMax>8</nbVoyageursMax>
+        <superficieJardin>0</superficieJardin>
+        <possedePiscine>1</possedePiscine>
+    </Maison>
+    <Maison name="Maison 9">
+        <hote>
+            <nom>Proviste</nom>
+            <prenom>Alain</prenom>
+            <age>44</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>119</tarifParNuit>
+        <adresse>36 Rue du Taur, Toulouse</adresse>
+        <superficie>182</superficie>
+        <nbVoyageursMax>7</nbVoyageursMax>
+        <superficieJardin>0</superficieJardin>
+        <possedePiscine>1</possedePiscine>
+    </Maison>
+    <Maison name="Maison 10">
+        <hote>
+            <nom>Menfaim</nom>
+            <prenom>Gérard</prenom>
+            <age>42</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>162</tarifParNuit>
+        <adresse>12 Rue de la République,Lyon</adresse>
+        <superficie>142</superficie>
+        <nbVoyageursMax>6</nbVoyageursMax>
+        <superficieJardin>500</superficieJardin>
+        <possedePiscine>1</possedePiscine>
+    </Maison>
+    <Maison name="Maison 11">
+        <hote>
+            <nom>Cover</nom>
+            <prenom>Harry</prenom>
+            <age>32</age>
+            <delaiReponse>1</delaiReponse>
+        </hote>
+        <tarifParNuit>87</tarifParNuit>
+        <adresse>78 Rue de Rivoli, Paris</adresse>
+        <superficie>183</superficie>
+        <nbVoyageursMax>6</nbVoyageursMax>
+        <superficieJardin>100</superficieJardin>
+        <possedePiscine>1</possedePiscine>
+    </Maison>
+    <Maison name="Maison 12">
+        <hote>
+            <nom>Assin</nom>
+            <prenom>Marc</prenom>
+            <age>24</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>280</tarifParNuit>
+        <adresse>9 Rue de Rivoli, Paris</adresse>
+        <superficie>137</superficie>
+        <nbVoyageursMax>7</nbVoyageursMax>
+        <superficieJardin>500</superficieJardin>
+        <possedePiscine>1</possedePiscine>
+    </Maison>
+    <Maison name="Maison 13">
+        <hote>
+            <nom>Ochon</nom>
+            <prenom>Paul</prenom>
+            <age>32</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>142</tarifParNuit>
+        <adresse>67 Rue de Rivoli, Paris</adresse>
+        <superficie>101</superficie>
+        <nbVoyageursMax>6</nbVoyageursMax>
+        <superficieJardin>100</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+    <Maison name="Maison 14">
+        <hote>
+            <nom>Ochon</nom>
+            <prenom>Paul</prenom>
+            <age>32</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>209</tarifParNuit>
+        <adresse>53 Promenade des Anglais, Nice</adresse>
+        <superficie>101</superficie>
+        <nbVoyageursMax>4</nbVoyageursMax>
+        <superficieJardin>0</superficieJardin>
+        <possedePiscine>1</possedePiscine>
+    </Maison>
+    <Maison name="Maison 15">
+        <hote>
+            <nom>Menfaim</nom>
+            <prenom>Gérard</prenom>
+            <age>42</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>171</tarifParNuit>
+        <adresse>82 Avenue des Champs - Élysées, Paris</adresse>
+        <superficie>130</superficie>
+        <nbVoyageursMax>5</nbVoyageursMax>
+        <superficieJardin>300</superficieJardin>
+        <possedePiscine>1</possedePiscine>
+    </Maison>
+    <Maison name="Maison 16">
+        <hote>
+            <nom>Golade</nom>
+            <prenom>Larry</prenom>
+            <age>32</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>165</tarifParNuit>
+        <adresse>6 Rue des Grandes Arcades, Strasbourg</adresse>
+        <superficie>139</superficie>
+        <nbVoyageursMax>6</nbVoyageursMax>
+        <superficieJardin>1000</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+    <Maison name="Maison 17">
+        <hote>
+            <nom>Ouzi</nom>
+            <prenom>Jacques</prenom>
+            <age>52</age>
+            <delaiReponse>1</delaiReponse>
+        </hote>
+        <tarifParNuit>245</tarifParNuit>
+        <adresse>34 Rue des Grandes Arcades, Strasbourg</adresse>
+        <superficie>249</superficie>
+        <nbVoyageursMax>6</nbVoyageursMax>
+        <superficieJardin>300</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+    <Maison name="Maison 18">
+        <hote>
+            <nom>Heat</nom>
+            <prenom>Hubert</prenom>
+            <age>54</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>91</tarifParNuit>
+        <adresse>78 Boulevard Lazare Carnot, Toulouse</adresse>
+        <superficie>154</superficie>
+        <nbVoyageursMax>5</nbVoyageursMax>
+        <superficieJardin>300</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+    <Maison name="Maison 19">
+        <hote>
+            <nom>Lapêche</nom>
+            <prenom>Ella</prenom>
+            <age>43</age>
+            <delaiReponse>1</delaiReponse>
+        </hote>
+        <tarifParNuit>107</tarifParNuit>
+        <adresse>10 Rue de la République,Lyon</adresse>
+        <superficie>162</superficie>
+        <nbVoyageursMax>6</nbVoyageursMax>
+        <superficieJardin>1000</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+    <Maison name="Maison 20">
+        <hote>
+            <nom>Ochon</nom>
+            <prenom>Paul</prenom>
+            <age>32</age>
+            <delaiReponse>24</delaiReponse>
+        </hote>
+        <tarifParNuit>253</tarifParNuit>
+        <adresse>47 Rue Gambetta, Lille</adresse>
+        <superficie>225</superficie>
+        <nbVoyageursMax>8</nbVoyageursMax>
+        <superficieJardin>1000</superficieJardin>
+        <possedePiscine>1</possedePiscine>
+    </Maison>
+    <Maison name="Maison 21">
+        <hote>
+            <nom>Golade</nom>
+            <prenom>Larry</prenom>
+            <age>32</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>109</tarifParNuit>
+        <adresse>5 Avenue des Champs - Élysées, Paris</adresse>
+        <superficie>156</superficie>
+        <nbVoyageursMax>6</nbVoyageursMax>
+        <superficieJardin>1000</superficieJardin>
+        <possedePiscine>1</possedePiscine>
+    </Maison>
+    <Maison name="Maison 22">
+        <hote>
+            <nom>Menfaim</nom>
+            <prenom>Gérard</prenom>
+            <age>42</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>187</tarifParNuit>
+        <adresse>40 Rue de Rivoli, Paris</adresse>
+        <superficie>106</superficie>
+        <nbVoyageursMax>5</nbVoyageursMax>
+        <superficieJardin>100</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+    <Maison name="Maison 23">
+        <hote>
+            <nom>Golade</nom>
+            <prenom>Larry</prenom>
+            <age>32</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>299</tarifParNuit>
+        <adresse>92 Boulevard de la Liberté, Lille</adresse>
+        <superficie>223</superficie>
+        <nbVoyageursMax>4</nbVoyageursMax>
+        <superficieJardin>1000</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+    <Maison name="Maison 24">
+        <hote>
+            <nom>Heat</nom>
+            <prenom>Hubert</prenom>
+            <age>54</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>242</tarifParNuit>
+        <adresse>23 Boulevard Lazare Carnot, Toulouse</adresse>
+        <superficie>224</superficie>
+        <nbVoyageursMax>8</nbVoyageursMax>
+        <superficieJardin>100</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+    <Maison name="Maison 25">
+        <hote>
+            <nom>Golade</nom>
+            <prenom>Larry</prenom>
+            <age>32</age>
+            <delaiReponse>12</delaiReponse>
+        </hote>
+        <tarifParNuit>247</tarifParNuit>
+        <adresse>82 Rue Foch, Montpellier</adresse>
+        <superficie>227</superficie>
+        <nbVoyageursMax>7</nbVoyageursMax>
+        <superficieJardin>300</superficieJardin>
+        <possedePiscine>0</possedePiscine>
+    </Maison>
+</Logements>

@@ -1,15 +1,15 @@
 package traore.javaboost.utilisateurs;
 
 /**
- * cette class permet de définit une personne
+ * Cette class permet de définir une personne
  * @version 1.0.0
  * @author traore
  * @since 2025
  */
 public class Personne {
-    private String nom;
-    private String prenoms;
-    private int age;
+    private final String nom;
+    private final String prenoms;
+    private final int age;
 
     /**
      * Ce constructeur permet d'initialiser une personne en passant en paramètre
@@ -28,30 +28,34 @@ public class Personne {
         return nom;
     }
 
-    public void setNom(String nom) {
+    /*public void setNom(String nom) {
         this.nom = nom;
-    }
+    }*/
 
     public String getPrenoms() {
         return prenoms;
     }
 
-    public void setPrenoms(String prenoms) {
+   /*public void setPrenoms(String prenoms) {
         this.prenoms = prenoms;
-    }
+    }*/
 
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    /*public void setAge(int age) {
         this.age = age;
-    }
+    }*/
 
     /**
-     * Cette methode affiche les les informations d'une personne.
+     * Cette methode affiche les informations d'une personne.
      */
     public void afficher(){
         System.out.print(this.nom+" "+this.prenoms+"("+this.age+")");
     }
+
+    // NB : les attributs sont marqués par le mot clé final et les setters sont tous commentés
+    // Afin de transformer les classes Personnes, Voyageur, Hote, Logement, Maison, Appartement
+    // et Chalet en des classes immuables.(Aucun changement d'état après initialisation de l'objet).
 }

@@ -35,6 +35,13 @@ public class Main {
 
         Sejour monSejour = SejourFactory.creerSejour(dateSejour, logement, nbNuit, nbVoyageur);
 
+        try{
+            monSejour.setLogement(data.getLogements().get(1));
+        }catch(Exception e){
+            System.out.println("Impossible de modifier cet logement : "+e.getMessage());
+        }
+
+
         //Le code ci-dessous est géré dans l classe SejourFactory
         /*if(nbNuit == 2 && Utilitaire.verifDayOfWeek(dateSejour)){ //dateSejour.getDay()==5 => eqivalent de la méthode verifDayOfWeek()
 

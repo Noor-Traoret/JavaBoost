@@ -3,8 +3,8 @@ package traore.javaboost.logements;
 import traore.javaboost.utilisateurs.Hote;
 
 public class Appartement extends Logement {
-    private int superficieDuBalcon;
-    private int numeroEtage;
+    private final int superficieDuBalcon;
+    private final int numeroEtage;
 
     public Appartement(String pNom, int pTarifParNuit, String pAdresse, int pSuperficie, int pNbVoyageursMax, Hote pHote, int pSuperficieDuBalcon, int pNumeroEtage){
         super(pNom, pTarifParNuit, pAdresse, pSuperficie, pNbVoyageursMax, pHote);
