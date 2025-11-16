@@ -1,6 +1,7 @@
 package traore.javaboost;
 
 import traore.javaboost.data.JavaBoostData;
+import traore.javaboost.data.Recherche;
 import traore.javaboost.logements.Appartement;
 import traore.javaboost.logements.Chalet;
 import traore.javaboost.logements.Logement;
@@ -27,11 +28,16 @@ public class Main {
 
         Voyageur voyageur = new Voyageur("Traore","Fatoumata Zahra", 26);
 
-        MaDate dateSejour = new MaDate(14,11,2025);
+        MaDate dateSejour = new MaDate(30,11,2025);
 
         int nbVoyageur = Utilitaire.choix("le nombre de voyageurs", 1, 5);
 
         int nbNuit = Utilitaire.choix("le nombre de nuits", 1, 31);
+
+        Recherche.Builder builder = new Recherche.Builder(nbVoyageur);
+
+        Recherche recherche = builder.tarifMin(100).tarifMax(200).possedePiscine(false).build();
+        System.out.println(recherche.toString());
 
         Sejour monSejour = SejourFactory.creerSejour(dateSejour, logement, nbNuit, nbVoyageur);
 
